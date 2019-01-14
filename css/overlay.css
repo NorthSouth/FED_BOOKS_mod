@@ -1,0 +1,44 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.overlayContainer {
+  position: relative;
+  width: 50%;
+  width: 25rem;
+  width: 100%;
+  padding: 1rem;
+  bottom: 0;
+  left: 0; }
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.purchaseOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(61, 126, 206, 0.75);
+  /* blue see-through */
+  color: #f1f1f1;
+  width: 100%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 30px;
+  text-align: center;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px; }
+
+.overlayContainer:hover .purchaseOverlay {
+  opacity: 1; }
+
+.buyMeIcon {
+  color: white;
+  cursor: pointer; }
+
+/*# sourceMappingURL=overlay.css.map */

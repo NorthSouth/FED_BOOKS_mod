@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1,  shrink-to-fit=no">
+  
+  
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+  
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  
+  
+  <title>BOOKS</title>
+
+
+  <link rel="stylesheet" href="css/reset.css">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+  <!--  Personal Font Awesome CDN link here  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/overlay.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/styles-FED.css">
+
+</head>
+
+<body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+<!--  Royalty-free image provided by: www.freepik.com/free-vector/open-book-icon-with-reflection_764540.htm--Designed by Freepik-->
+  
+  <div class="container">
+      <div class="header">
+        <div class="header-message">Assemble books</div>        
+      </div>
+
+    <div id="book-index" >
+    <main>
+      <div class="content-container" >
+          <div class="tools-container ">
+            <form class="pl-2" id="filter-items" name="filterForm" >
+              <label for="inputState">Filter books by:</label>
+              <select id="inputState" class="form-control" name="dropDown">
+                  <option selected>Choose...</option>
+                  <option value="Author">Author</option>
+                  <option value="Title">Title</option>
+                </select>
+              <button type="submit" value="submit" class="btn btn-primary btn-block mt-2" style="background-color:darkgray;border-color:darkgray" v-on:click.prevent="filterItems(this)">Sort</button>
+
+            </form>
+          </div>
+        <div class="book-container">
+          <div id="result-container">
+            <h2 id="main-heading">
+                Books
+            </h2>
+            <div id="display-container">
+              <h4 id="h4atom">Titles A-M</h4>
+                <div id="content-row" class="item-container col-sm-0">
+                  <div class="d-sm-flex flex-wrap p-2 justify-content-center" id="item-grid">
+
+                    <div v-for="(book, index) in books" class="item-wrapper" v-if="index < getDispVal1(book)">
+                      <div class="entry-wrapper">
+                      <div class="book-wrapper" >
+                          <img v-bind:src="srcI(book)" alt="book" >
+                          <div class="title-wrapper">
+                            <div class="book-title">{{ nameI(book) }}</div>
+                          </div>
+                          <div class="search-wrapper">
+                            <div class="book-search">sorting by: {{ sortValI(book) }}</div>
+                          </div>
+                          <!-- Trigger/Open The Modal -->
+                          <div class="infoBTN-wrapper">
+                            <button type="button" class="btn btn-info btn-block" v-on:click.prevent="showModal(book,index)"  id="myBtn">more info</button>
+                          </div>
+                          <!-- Info Modal -->
+                          <div id="myModal" class="modal">
+
+                            <!-- Modal content info -->
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h2 id="modal-title"></h2>
+                              </div>
+                              <div class="modal-body">
+                                <p id="modal-author"></p>
+                                <p id="modal-description"></p>
+                              </div>
+                              <div class="modal-footer">
+                                <div class="modal-footer-wrapper">
+                                  <div id="buy-hide" class="buyMeIcon-wrapper">
+                                    <i class="fa fa-shopping-cart buyMeIcon" v-on:click.prevent="buyModalItem"><span id="modal-book-price"></span></i>
+                                  </div>
+                                  <div id="modal-close" v-on:click.prevent="dismissModal(this)" class="close">&times;</div>
+                                </div>
+                              </div>
+                            </div>         
+                          </div>                    
+                      </div>
+                      </div>
+                    </div>
+
+                  </div>              
+                  <!-- A-M buttons -->
+                  <div class="d-sm-flex flex-wrap p-2 justify-content-sm-center">
+                      <button type="submit" value="submit" class="m-2 btn btn-primary mt-2 showMore1Class" style="background-color: gray;border-color:gray;" v-on:click.prevent="showMore1(this)" >SHOW MORE (A -M)</button>
+                      <button type="submit" value="submit" class="m-2 btn btn-primary  mt-2 showLess1Class" style="background-color: gray;border-color:gray;" v-on:click.prevent="showLess1(this)" >SHOW LESS (A -M)</button>
+                  </div>
+                </div>
+              <h4 id="h4ntoz">Titles N-Z</h4> 
+                <div id="content-row" class="item-container col-sm-0">
+                <div class="d-sm-flex flex-wrap p-2 justify-content-center" id="item-grid">
+
+                  <div v-for="(book, index) in books2" class="item-wrapper" v-if="index < getDispVal2(book)">
+                    <div class="entry-wrapper">
+                    <div class="book-wrapper" >
+                        <img v-bind:src="srcI(book)" alt="book">
+                        <div class="title-wrapper">
+                          <div class="book-title">{{ nameI(book) }}</div>
+                        </div>
+                        <div class="search-wrapper">
+                          <div class="book-search">sorting by: {{ sortValI(book) }}</div>
+                        </div>
+                        <!-- Open The Modal -->
+                        <div class="infoBTN-wrapper">
+                          <button type="button" class="btn btn-info btn-block" v-on:click.prevent="showModal2(book,index)"  id="myBtn">more info</button>
+                        </div>
+                        <!-- Info Modal -->
+                        <div id="myModal2" class="modal2">
+
+                          <!-- Modal content info -->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h2 id="modal-title2"></h2>
+                            </div>
+                            <div class="modal-body">
+                              <p id="modal-author2"></p>
+                              <p id="modal-description2"></p>
+                            </div>
+                            <div class="modal-footer">
+                              <div class="modal-footer-wrapper">
+                                <div id="buy-hide2" class="buyMeIcon-wrapper">
+                                  <i class="fa fa-shopping-cart buyMeIcon" v-on:click.prevent="buyModalItem"><span id="modal-book-price2"></span></i>
+                                </div>
+                                <div id="modal-close" v-on:click.prevent="dismissModal2(this)" class="close">&times;</div>
+                              </div>
+                            </div>
+                          </div>         
+                        </div>                    
+
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                  <!-- N-Z buttons -->
+                  <div class="d-sm-flex flex-wrap p-2 justify-content-sm-center">
+                      <button type="submit" value="submit" class="m-2 btn btn-primary mt-2 showMore2Class" style="background-color: gray;border-color:gray;" v-on:click.prevent="showMore2(this)" >SHOW MORE (N -Z)</button>
+                      <button type="submit" value="submit" class="m-2 btn btn-primary  mt-2 showLess2Class" style="background-color: gray;border-color:gray;" v-on:click.prevent="showLess2(this)" >SHOW LESS (N -Z)</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    </div>
+    
+    <footer>
+      <div class="footer-container">
+        <div>Assemble books</div>
+      </div>
+    </footer>
+    
+
+  </div>
+  
+    <!--   javascript files   -->
+  
+    <script src="js/init.js"></script>
+    <script src="js/parse.js"></script>
+    <script src="js/main-vue-book.js"></script>
+  
+</body>
+
+</html>

@@ -1,0 +1,840 @@
+{
+ "kind": "books#volumes",
+ "totalItems": 2292,
+ "items": [
+  {
+   "kind": "books#volume",
+   "id": "385SDKrMdMoC",
+   "etag": "jx5xFGdYZuA",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/385SDKrMdMoC",
+   "volumeInfo": {
+    "title": "Tech-noir Film",
+    "subtitle": "A Theory of the Development of Popular Genres",
+    "authors": [
+     "Emily E. Auger"
+    ],
+    "publisher": "Intellect Books",
+    "publishedDate": "2011",
+    "description": "From the postapocalyptic world of Blade Runner to the James Cameron mega-hit Terminator, tech-noir has emerged as a distinct genre, with roots in both the Promethean myth and the earlier popular traditions of gothic, detective, and science fiction. In this new volume, many well-known film and literary works—including The Matrix, RoboCop, and Mary Shelley's Frankenstein—are discussed with reference to their relationship to tech-noir and one another. Featuring an extensive, clearly indexed filmography, Tech-Noir Film will be of great interest to anyone wishing to learn more about the development of this new and highly innovative genre.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781841504247"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1841504246"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 492,
+    "printType": "BOOK",
+    "categories": [
+     "Art"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "0.0.2.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=385SDKrMdMoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=385SDKrMdMoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=385SDKrMdMoC&printsec=frontcover&dq=tech&hl=&cd=1&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=385SDKrMdMoC&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-385SDKrMdMoC"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 20.0,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 9.99,
+     "currencyCode": "USD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=385SDKrMdMoC&rdid=book-385SDKrMdMoC&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 2.0E7,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 9990000.0,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Tech_noir_Film-sample-epub.acsm?id=385SDKrMdMoC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Tech_noir_Film-sample-pdf.acsm?id=385SDKrMdMoC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=385SDKrMdMoC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "In this new volume, many well-known film and literary works—including The Matrix, RoboCop, and Mary Shelley&#39;s Frankenstein—are discussed with reference to their relationship to tech-noir and one another."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "msdT4iQ50cgC",
+   "etag": "c7u44/U8XRM",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/msdT4iQ50cgC",
+   "volumeInfo": {
+    "title": "High-tech Cycling",
+    "authors": [
+     "Ed Burke"
+    ],
+    "publisher": "Human Kinetics",
+    "publishedDate": "2003",
+    "description": "For serious cyclists, cycling coaches, and triathletes, the quest for a technical edge never stops. Now two-time U.S. Olympic cycling team staff member and renowned cycling author Ed Burke leads a team of top cycling scientists to reveal the latest advances in the sport. The newest edition of High-Tech Cyclingpicks up where the first edition left off, incorporating the most current information on cycling technology, technique, physiology, and mechanics in one comprehensive book. Thorough explanations, along with supportive graphs and illustrations, give you an in-depth understanding of the dynamics between human and machine that combine to create champions of the sport. Thirteen experts contributed to this book, compiling the latest scientific information available to enhance your cycling performance. From bike optimization to body positioning, High-Tech Cyclingprovides the details you want, including new information you won't find in any other book. With each chapter, you'll gain fresh insights and new information from another research insider. In High-Tech Cycling, you'll learn more than what to do and how to do it; you'll discover the scientific justification for equipment, positioning, and key training decisions. The book covers every aspect of the cycling world, from racing on the road to specific elements of mountain biking. High-Tech Cyclingcuts through opinions and misinformation to give you the cutting edge on the science behind the sport. From heart rate monitors and altitude tents to power hubs, suspension systems, frame construction, pedaling efficiency, and beyond, the book covers every aspect of technology and technique. Additional chapters are dedicated to nutrition, altitude training, and the physiological demands of the sport.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "0736045074"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9780736045070"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 319,
+    "printType": "BOOK",
+    "categories": [
+     "Sports & Recreation"
+    ],
+    "averageRating": 4.5,
+    "ratingsCount": 3,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.0.0.0.preview.1",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=msdT4iQ50cgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=msdT4iQ50cgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=msdT4iQ50cgC&printsec=frontcover&dq=tech&hl=&cd=2&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=msdT4iQ50cgC&dq=tech&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/High_tech_Cycling.html?hl=&id=msdT4iQ50cgC"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=msdT4iQ50cgC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Thirteen experts contributed to this book, compiling the latest scientific information available to enhance your cycling performance."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "bRUZCgAAQBAJ",
+   "etag": "0WZme917RNo",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/bRUZCgAAQBAJ",
+   "volumeInfo": {
+    "title": "Women in Tech",
+    "subtitle": "Take Your Career to the Next Level with Practical Advice and Inspiring Stories",
+    "authors": [
+     "Tarah Wheeler"
+    ],
+    "publisher": "Sasquatch Books",
+    "publishedDate": "2016-03-29",
+    "description": "Geared toward women who are considering getting into tech, or those already in a tech job who want to take their career to the next level, this book combines practical career advice and inspiring personal stories from successful female tech professionals Brianna Wu (founder, Giant Spacekat), Angie Chang (founder, Women 2.0), Keren Elazari (TED speaker and cybersecurity expert), Katie Cunningham (Python educator and developer), Miah Johnson (senior systems administrator), Kristin Toth Smith (tech executive and inventor), and Kamilah Taylor (mobile and social developer). Written by a female startup CEO and featuring a host of other successful contributors, this book will help dismantle the unconscious social bias against women in the tech industry. Readers will learn: · The secrets of salary negotiation · The best format for tech resumes · How to ace a tech interview · The perks of both contracting (W-9) and salaried full-time work · The secrets of mentorship · How to start your own company · And much more Bonus content: Perfect for its audience of hackers and coders, the book contains puzzles and code, created as love letters to women in the tech industry. A distinguished anonymous contributor created the Python code for the cover of the book (ghosted in gloss on the hardcover jacket, and also printed on one of the first pages). It references the mother of computer science, Ada Lovelace. Run the code to see what it does! Mike Selinker and Gaby Weidling of Lone Shark Games, and cryptographer and DefCon puzzle master Ryan “LostboY” Clarke created an “easter egg” of puzzles throughout the book - readers who decipher the puzzles get a prize from the author!",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781632170675"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1632170671"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 272,
+    "printType": "BOOK",
+    "categories": [
+     "Business & Economics"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.2.2.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=bRUZCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=bRUZCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=bRUZCgAAQBAJ&printsec=frontcover&dq=tech&hl=&cd=3&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=bRUZCgAAQBAJ&dq=tech&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Women_in_Tech.html?hl=&id=bRUZCgAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Women_in_Tech-sample-epub.acsm?id=bRUZCgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Women_in_Tech-sample-pdf.acsm?id=bRUZCgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=bRUZCgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Geared toward women who are considering getting into tech, or those already in a tech job who want to take their career to the next level, this book combines practical career advice and inspiring personal stories from successful female tech ..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "pn4pDwAAQBAJ",
+   "etag": "gaoEtNKjcv8",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/pn4pDwAAQBAJ",
+   "volumeInfo": {
+    "title": "Automating Inequality",
+    "subtitle": "How High-Tech Tools Profile, Police, and Punish the Poor",
+    "authors": [
+     "Virginia Eubanks"
+    ],
+    "publisher": "St. Martin's Press",
+    "publishedDate": "2018-01-23",
+    "description": "The New York Times Book Review: \"Riveting.\" Naomi Klein: \"This book is downright scary.\" Ethan Zuckerman, MIT: \"Should be required reading.\" Dorothy Roberts, author of Killing the Black Body: \"A must-read.\" Astra Taylor, author of The People's Platform: \"The single most important book about technology you will read this year.\" Cory Doctorow: \"Indispensable.\" A powerful investigative look at data-based discrimination—and how technology affects civil and human rights and economic equity The State of Indiana denies one million applications for healthcare, foodstamps and cash benefits in three years—because a new computer system interprets any mistake as “failure to cooperate.” In Los Angeles, an algorithm calculates the comparative vulnerability of tens of thousands of homeless people in order to prioritize them for an inadequate pool of housing resources. In Pittsburgh, a child welfare agency uses a statistical model to try to predict which children might be future victims of abuse or neglect. Since the dawn of the digital age, decision-making in finance, employment, politics, health and human services has undergone revolutionary change. Today, automated systems—rather than humans—control which neighborhoods get policed, which families attain needed resources, and who is investigated for fraud. While we all live under this new regime of data, the most invasive and punitive systems are aimed at the poor. In Automating Inequality, Virginia Eubanks systematically investigates the impacts of data mining, policy algorithms, and predictive risk models on poor and working-class people in America. The book is full of heart-wrenching and eye-opening stories, from a woman in Indiana whose benefits are literally cut off as she lays dying to a family in Pennsylvania in daily fear of losing their daughter because they fit a certain statistical profile. The U.S. has always used its most cutting-edge science and technology to contain, investigate, discipline and punish the destitute. Like the county poorhouse and scientific charity before them, digital tracking and automated decision-making hide poverty from the middle-class public and give the nation the ethical distance it needs to make inhumane choices: which families get food and which starve, who has housing and who remains homeless, and which families are broken up by the state. In the process, they weaken democracy and betray our most cherished national values. This deeply researched and passionate book could not be more timely.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781466885967"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1466885963"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": false
+    },
+    "pageCount": 288,
+    "printType": "BOOK",
+    "categories": [
+     "Social Science"
+    ],
+    "averageRating": 4.0,
+    "ratingsCount": 3,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.1.1.0.preview.2",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=pn4pDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=pn4pDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=pn4pDwAAQBAJ&printsec=frontcover&dq=tech&hl=&cd=4&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=pn4pDwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-pn4pDwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 13.99,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 13.99,
+     "currencyCode": "USD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=pn4pDwAAQBAJ&rdid=book-pn4pDwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.399E7,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.399E7,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Automating_Inequality-sample-epub.acsm?id=pn4pDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=pn4pDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "The New York Times Book Review: &quot;Riveting.&quot; Naomi Klein: &quot;This book is downright scary.&quot; Ethan Zuckerman, MIT: &quot;Should be required reading.&quot; Dorothy Roberts, author of Killing the Black Body: &quot;A must-read."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "sAK6_W7lLkoC",
+   "etag": "qC+gLTmmAyo",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/sAK6_W7lLkoC",
+   "volumeInfo": {
+    "title": "The Encyclopedia of High-tech Crime and Crime-fighting",
+    "authors": [
+     "Michael Newton"
+    ],
+    "publisher": "Infobase Publishing",
+    "publishedDate": "2003",
+    "description": "The history of crime in American has proven that criminals are often the first to seize upon opportunities presented by new technologies and use them for nefarious purposes. It has also demonstrated that law enforcement groups are quick to respond and use high-tech tools to defend the public safety. This is more true than ever",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781438129860"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1438129866"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 401,
+    "printType": "BOOK",
+    "categories": [
+     "Computer crimes"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=sAK6_W7lLkoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=sAK6_W7lLkoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=sAK6_W7lLkoC&printsec=frontcover&dq=tech&hl=&cd=5&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=sAK6_W7lLkoC&dq=tech&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Encyclopedia_of_High_tech_Crime_and.html?hl=&id=sAK6_W7lLkoC"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/The_Encyclopedia_of_High_tech_Crime_and-sample-pdf.acsm?id=sAK6_W7lLkoC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=sAK6_W7lLkoC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "It has also demonstrated that law enforcement groups are quick to respond and use high-tech tools to defend the public safety. This is more true than ever"
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "uhQ4DwAAQBAJ",
+   "etag": "f4NLUzBDzt0",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/uhQ4DwAAQBAJ",
+   "volumeInfo": {
+    "title": "Live Work Work Work Die",
+    "subtitle": "A Journey into the Savage Heart of Silicon Valley",
+    "authors": [
+     "Corey Pein"
+    ],
+    "publisher": "Metropolitan Books",
+    "publishedDate": "2018-04-24",
+    "description": "A scathing, sardonic exploration of Silicon Valley tech culture, laying bare the greed, hubris, and retrograde politics of an industry that aspires to radically transform society for its own benefit At the height of the startup boom, journalist Corey Pein set out for Silicon Valley with little more than a smartphone and his wits. His goal: to learn how such an overhyped industry could possibly sustain itself as long as it has. But to truly understand the delirious reality of the tech entrepreneurs, he knew he would have to inhabit that perspective—he would have to become an entrepreneur himself. Thus Pein begins his journey—skulking through gimmicky tech conferences, pitching his over-the-top business ideas to investors, and rooming with a succession of naive upstart programmers whose entire lives are managed by their employers—who work endlessly and obediently, never thinking to question their place in the system. In showing us this frantic world, Pein challenges the positive, feel-good self-image that the tech tycoons have crafted—as nerdy and benevolent creators of wealth and opportunity—revealing their self-justifying views and their insidious visions for the future. Vivid and incisive, Live Work Work Work Die is a troubling portrait of a self-obsessed industry bent on imposing its disturbing visions on the rest of us.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781627794862"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1627794867"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": false
+    },
+    "pageCount": 320,
+    "printType": "BOOK",
+    "categories": [
+     "Business & Economics"
+    ],
+    "averageRating": 5.0,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.4.3.0.preview.2",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=uhQ4DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=uhQ4DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=uhQ4DwAAQBAJ&printsec=frontcover&dq=tech&hl=&cd=6&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=uhQ4DwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-uhQ4DwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 14.99,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 14.99,
+     "currencyCode": "USD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=uhQ4DwAAQBAJ&rdid=book-uhQ4DwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.499E7,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.499E7,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Live_Work_Work_Work_Die-sample-epub.acsm?id=uhQ4DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=uhQ4DwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Vivid and incisive, Live Work Work Work Die is a troubling portrait of a self-obsessed industry bent on imposing its disturbing visions on the rest of us."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "L90vRE-bCY4C",
+   "etag": "iJNuOfBK3tM",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/L90vRE-bCY4C",
+   "volumeInfo": {
+    "title": "Tech Tally",
+    "subtitle": "Approaches to Assessing Technological Literacy",
+    "authors": [
+     "Committee on Assessing Technological Literacy",
+     "National Research Council",
+     "National Academy of Engineering",
+     "National Academy of Engineering. Committee on Assessing Technological Literacy in the United States"
+    ],
+    "publisher": "Island Press",
+    "publishedDate": "2006-08",
+    "description": "In a broad sense, technology is any modification of the natural world made to fulfill human needs or desires. Although people tend to focus on the most recent technological inventions, technology includes a myriad of devices and systems that profoundly affect everyone in modern society. Technology is pervasive; an informed citizenship needs to know what technology is, how it works, how it is created, how it shapes our society, and how society influences technological development. This understanding depends in large part on an individual level of technological literacy. Tech Tally: Approaches to Assessing Technological Literacy determines the most viable approaches to assessing technological literacy for students, teachers, and out-of-school adults. The book examines opportunities and obstacles to developing scientifically valid and broadly applicable assessment instruments for technological literacy in the three target populations. The book offers findings and 12 related recommendations that address five critical areas: instrument development; research on learning; computer-based assessment methods, framework development, and public perceptions of technology. This book will be of special interest to individuals and groups promoting technological literacy in the United States, education and government policy makers in federal and state agencies, as well as the education research community.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "0309101832"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9780309101837"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 358,
+    "printType": "BOOK",
+    "categories": [
+     "Education"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.0.1.0.preview.0",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=L90vRE-bCY4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=L90vRE-bCY4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=L90vRE-bCY4C&printsec=frontcover&dq=tech&hl=&cd=7&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=L90vRE-bCY4C&dq=tech&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Tech_Tally.html?hl=&id=L90vRE-bCY4C"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=L90vRE-bCY4C&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "This book will be of special interest to individuals and groups promoting technological literacy in the United States, education and government policy makers in federal and state agencies, as well as the education research community."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "chZSDgAAQBAJ",
+   "etag": "6XJ87gRCA+c",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/chZSDgAAQBAJ",
+   "volumeInfo": {
+    "title": "Technically Wrong: Sexist Apps, Biased Algorithms, and Other Threats of Toxic Tech",
+    "authors": [
+     "Sara Wachter-Boettcher"
+    ],
+    "publisher": "W. W. Norton & Company",
+    "publishedDate": "2017-10-10",
+    "description": "A revealing look at how tech industry bias and blind spots get baked into digital products—and harm us all. Buying groceries, tracking our health, finding a date: whatever we want to do, odds are that we can now do it online. But few of us ask why all these digital products are designed the way they are. It’s time we change that. Many of the services we rely on are full of oversights, biases, and downright ethical nightmares: Chatbots that harass women. Signup forms that fail anyone who’s not straight. Social media sites that send peppy messages about dead relatives. Algorithms that put more black people behind bars. Sara Wachter-Boettcher takes an unflinching look at the values, processes, and assumptions that lead to these and other problems. Technically Wrong demystifies the tech industry, leaving those of us on the other side of the screen better prepared to make informed choices about the services we use—and demand more from the companies behind them.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780393634648"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0393634647"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": false
+    },
+    "pageCount": 240,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.5.4.0.preview.2",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=chZSDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=chZSDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=chZSDgAAQBAJ&printsec=frontcover&dq=tech&hl=&cd=8&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=chZSDgAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-chZSDgAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 15.95,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 10.42,
+     "currencyCode": "USD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=chZSDgAAQBAJ&rdid=book-chZSDgAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.595E7,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.042E7,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Technically_Wrong_Sexist_Apps_Biased_Alg-sample-epub.acsm?id=chZSDgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=chZSDgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "In Technically Wrong, Sara Wachter-Boettcher demystifies the tech industry, leaving those of us on the other side of the screen better prepared to make informed choices about the services we use—and to demand more from the companies ..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "ERsUausxU8YC",
+   "etag": "1d4er0tL9lI",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/ERsUausxU8YC",
+   "volumeInfo": {
+    "title": "Corvette Tech Q and A",
+    "subtitle": "Answers to the Most Technical Questions Posed by Corvette Enthusiasts",
+    "authors": [
+     "Dave Emanuel"
+    ],
+    "publisher": "Penguin",
+    "publishedDate": "2002",
+    "description": "A compilation of Dave Emanuel's popular Q & A column, this book includes sections on Numbers, Suspension, Engine, Body, Drivetrain, and Interior. Each question is thoroughly answered, and each column includes illustrative photos.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "1557883769"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9781557883766"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 122,
+    "printType": "BOOK",
+    "categories": [
+     "Transportation"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.1.1.0.preview.0",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=ERsUausxU8YC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=ERsUausxU8YC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=ERsUausxU8YC&printsec=frontcover&dq=tech&hl=&cd=9&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=ERsUausxU8YC&dq=tech&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Corvette_Tech_Q_and_A.html?hl=&id=ERsUausxU8YC"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=ERsUausxU8YC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "A compilation of Dave Emanuel&#39;s popular Q &amp; A column, this book includes sections on Numbers, Suspension, Engine, Body, Drivetrain, and Interior. Each question is thoroughly answered, and each column includes illustrative photos."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "jsT5V3mvSGgC",
+   "etag": "/9y4luI5nAA",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/jsT5V3mvSGgC",
+   "volumeInfo": {
+    "title": "Biographies of Scientists for Sci-tech Libraries",
+    "subtitle": "Adding Faces to the Facts",
+    "authors": [
+     "Tony Stankus"
+    ],
+    "publisher": "CRC Press",
+    "publishedDate": "1991",
+    "description": "Contains material that should prove helpful to sci-tech librarians in furthering their understanding and appreciation of science as a broadly-based and creative experience - and how to use these titles to share this understanding with students and other readers.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "1560242140"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9781560242147"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 228,
+    "printType": "BOOK",
+    "categories": [
+     "Biography & Autobiography"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.0.1.0.preview.1",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=jsT5V3mvSGgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=jsT5V3mvSGgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=jsT5V3mvSGgC&printsec=frontcover&dq=tech&hl=&cd=10&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=jsT5V3mvSGgC&dq=tech&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Biographies_of_Scientists_for_Sci_tech_L.html?hl=&id=jsT5V3mvSGgC"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=jsT5V3mvSGgC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Contains material that should prove helpful to sci-tech librarians in furthering their understanding and appreciation of science as a broadly-based and creative experience - and how to use these titles to share this understanding with ..."
+   }
+  }
+ ]
+}
