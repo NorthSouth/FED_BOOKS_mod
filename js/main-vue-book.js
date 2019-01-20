@@ -7,7 +7,9 @@ var bk = new Vue({
     seenNtoZ:buyableArrNtoZ,
     btnPress: false,
     bookURL:"",
-    bookIMG:""
+    bookIMG:"",
+    bkIndex:0,
+    bkModal:[]
   },
   mounted(){    
     this.fetchData(); // load local JSON file
@@ -53,24 +55,21 @@ var bk = new Vue({
     showModal: function (e,i) {
       var modal = document.getElementById('myModal');
       modal.style.display = "block";
-      this.modalTitle(e.volumeInfo.title);
-      this.modalDescription(e.volumeInfo.description);
-      this.modalAuthor(e);
       this.modalisSeenAtoM(e,i);
+      this.bkIndex=i;
+      this.bkModal=e;
     },
     showModal2: function (e,i) {
       var modal = document.getElementById('myModal2');
       modal.style.display = "block";
-      this.modalTitle2(e.volumeInfo.title);
-      this.modalDescription2(e.volumeInfo.description);
-      this.modalAuthor2(e);
       this.modalisSeenNtoZ(e,i);  
+      this.bkIndex=i;
+      this.bkModal=e;
     },
     showImageModal: function (e) {
       var modal = document.getElementById('myModal-image');
       var modalImg = document.getElementById('modalImg');
       modal.style.display = "block";
-      this.modalTitle(e.volumeInfo.title);
       this.modalDescription(e.volumeInfo.description);
       this.bookURL=this.srcI(e);      
       modalImg.src=this.bookURL;
@@ -122,12 +121,10 @@ var bk = new Vue({
         element=document.getElementById("buy-hide");
         element.style.display="none"        
         element=document.getElementById("modal-book-price");
-        element.innerHTML="";
       } else {       
         element=document.getElementById("buy-hide");
         element.style.display="block"          
         element=document.getElementById("modal-book-price");
-        element.innerHTML=this.priceI(e);
         this.bookURL=e.saleInfo.buyLink;
       }     
       return this.seenAtoM[e];
@@ -139,13 +136,11 @@ var bk = new Vue({
         element=document.getElementById("buy-hide2");
         element.style.display="none"        
         element=document.getElementById("modal-book-price2");
-        element.innerHTML="";
       } else {      
         this.seenNtoZ[i]=true; 
         element=document.getElementById("buy-hide2");
         element.style.display="block"          
         element=document.getElementById("modal-book-price2");
-        element.innerHTML=this.priceI(e);
         this.bookURL=e.saleInfo.buyLink;
       }     
       return this.seenNtoZ[e];
@@ -180,11 +175,12 @@ var bk = new Vue({
     },
     authorI: function (e) {
       var bkAuthor="";
+      var numAuthors=e.volumeInfo.authors.length
       
       if (e.volumeInfo.authors.length > 1) {
-        bkAuthor=e.volumeInfo.authors[0]+" et al";
+        bkAuthor="Authors: "+e.volumeInfo.authors[0]+" et al";
       } else {
-        bkAuthor=e.volumeInfo.authors[0];
+        bkAuthor="Author: "+e.volumeInfo.authors[0];
     }
       return bkAuthor;
     },
@@ -396,4 +392,113 @@ var bk = new Vue({
       }
     }
   }
+})
+
+Vue.component('modal-overlay-atom', {
+  computed: {
+    bookIndex: function () {
+      this.modalIndex=this.$parent.bkIndex;
+      return this.$parent.bkIndex
+    },
+    bookTitle: function () {
+      this.modalIndex=this.$parent.bkIndex;
+      return this.$parent.books[this.modalIndex].volumeInfo.title
+    },
+    bookAuthor: function () {
+      this.modalIndex=this.$parent.bkIndex;
+      return this.$parent.books[this.modalIndex].volumeInfo.authors[0]
+    },
+    bookDescription: function () {
+      this.modalIndex=this.$parent.bkIndex;
+      return this.$parent.books[this.modalIndex].volumeInfo.description
+    },
+    bookAuthorPlural: function () {
+      this.modalIndex=this.$parent.bkIndex;
+      var numAuthors=this.$parent.books[this.modalIndex].volumeInfo.authors.length;
+      if (numAuthors > 1) { return "s"};
+    },
+    bookPrice: function () {      
+      this.modalIndex=this.$parent.bkIndex;
+      var modalBkPrice=this.$parent.priceI(this.$parent.books[this.modalIndex]);
+      if (modalBkPrice != "not for sale") {
+        return modalBkPrice;
+      }
+    }
+  },
+  template: `  
+    <div id="myModal" class="modal">
+      <!-- Modal content info -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="modal-title">{{ bookTitle }}</h2>
+        </div>
+        <div class="modal-body">
+          <p id="modal-author"><span>Author{{ bookAuthorPlural }}:</span> {{ bookAuthor }}</p>
+          <p id="modal-description">{{ bookDescription }}</p>
+        </div>
+        <div class="modal-footer">
+          <div class="modal-footer-wrapper">
+            <div id="buy-hide" class="buyMeIcon-wrapper">
+              <i class="fa fa-shopping-cart buyMeIcon" v-on:click.prevent="$parent.buyModalItem"><span id="modal-book-price" >{{ bookPrice }}</span></i>
+            </div>
+            <div id="modal-close" v-on:click.prevent="$parent.dismissModal(this)" class="close">&times;</div>
+          </div>
+        </div>
+      </div>         
+    </div> 
+  `
+})
+Vue.component('modal-overlay-ntoz', {
+  computed: {
+    bookIndex: function () {
+      this.modalIndex=this.$parent.bkIndex;
+      return this.$parent.bkIndex
+    },
+    bookTitle: function () {
+      this.modalIndex=this.$parent.bkIndex;
+      return this.$parent.books2[this.modalIndex].volumeInfo.title
+    },
+    bookAuthor: function () {
+      this.modalIndex=this.$parent.bkIndex;
+      return this.$parent.books2[this.modalIndex].volumeInfo.authors[0]
+    },
+    bookDescription: function () {
+      this.modalIndex=this.$parent.bkIndex;
+      return this.$parent.books2[this.modalIndex].volumeInfo.description
+    },
+    bookAuthorPlural: function () {
+      this.modalIndex=this.$parent.bkIndex;
+      var numAuthors=this.$parent.books2[this.modalIndex].volumeInfo.authors.length;
+      if (numAuthors > 1) { return "s"};
+    },
+    bookPrice: function () {      
+      this.modalIndex=this.$parent.bkIndex;
+      var modalBkPrice=this.$parent.priceI(this.$parent.books2[this.modalIndex]);
+      if (modalBkPrice != "not for sale") {
+        return modalBkPrice;
+      }
+    }
+  },
+  template: `  
+    <div id="myModal2" class="modal">
+      <!-- Modal content info -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="modal-title">{{ bookTitle }}</h2>
+        </div>
+        <div class="modal-body">
+          <p id="modal-author"><span>Author{{ bookAuthorPlural }}:</span> {{ bookAuthor }}</p>
+          <p id="modal-description">{{ bookDescription }}</p>
+        </div>
+        <div class="modal-footer">
+          <div class="modal-footer-wrapper">
+            <div id="buy-hide2" class="buyMeIcon-wrapper">
+              <i class="fa fa-shopping-cart buyMeIcon" v-on:click.prevent="$parent.buyModalItem"><span id="modal-book-price2" >{{ bookPrice }}</span></i>
+            </div>
+            <div id="modal-close" v-on:click.prevent="$parent.dismissModal2(this)" class="close">&times;</div>
+          </div>
+        </div>
+      </div>         
+    </div> 
+  `
 })

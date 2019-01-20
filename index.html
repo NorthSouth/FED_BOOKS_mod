@@ -90,27 +90,7 @@
                             <button type="button" class="btn btn-info btn-block" v-on:click.prevent="showModal(book,index)"  id="myBtn">more info</button>
                           </div>
                           <!-- Info Modal -->
-                          <div id="myModal" class="modal">
-
-                            <!-- Modal content info -->
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h2 id="modal-title"></h2>
-                              </div>
-                              <div class="modal-body">
-                                <p id="modal-author"></p>
-                                <p id="modal-description"></p>
-                              </div>
-                              <div class="modal-footer">
-                                <div class="modal-footer-wrapper">
-                                  <div id="buy-hide" class="buyMeIcon-wrapper">
-                                    <i class="fa fa-shopping-cart buyMeIcon" v-on:click.prevent="buyModalItem"><span id="modal-book-price"></span></i>
-                                  </div>
-                                  <div id="modal-close" v-on:click.prevent="dismissModal(this)" class="close">&times;</div>
-                                </div>
-                              </div>
-                            </div>         
-                          </div>                    
+                        <modal-overlay-atom></modal-overlay-atom> 
                       </div>
                       </div>
                     </div>
@@ -140,29 +120,8 @@
                         <div class="infoBTN-wrapper">
                           <button type="button" class="btn btn-info btn-block" v-on:click.prevent="showModal2(book,index)"  id="myBtn">more info</button>
                         </div>
-                        <!-- Info Modal -->
-                        <div id="myModal2" class="modal2">
-
-                          <!-- Modal content info -->
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h2 id="modal-title2"></h2>
-                            </div>
-                            <div class="modal-body">
-                              <p id="modal-author2"></p>
-                              <p id="modal-description2"></p>
-                            </div>
-                            <div class="modal-footer">
-                              <div class="modal-footer-wrapper">
-                                <div id="buy-hide2" class="buyMeIcon-wrapper">
-                                  <i class="fa fa-shopping-cart buyMeIcon" v-on:click.prevent="buyModalItem"><span id="modal-book-price2"></span></i>
-                                </div>
-                                <div id="modal-close" v-on:click.prevent="dismissModal2(this)" class="close">&times;</div>
-                              </div>
-                            </div>
-                          </div>         
-                        </div>                    
-
+                        <!-- Info Modal -->                        
+                        <modal-overlay-ntoz></modal-overlay-ntoz> 
                     </div>
                     </div>
                   </div>

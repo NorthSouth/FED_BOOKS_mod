@@ -54,10 +54,12 @@ element[0].id=0;
 element[0].style.display = "none";
 
 
-element=document.getElementById("buy-hide");
-element.style.display="block";
+/*element=document.getElementById("buy-hide");
+element.style.display="block";*/
+/*
 element=document.getElementById("buy-hide2");
 element.style.display="block";
+*/
 
 document.getElementById("h4atom").innerHTML="Authors A-M";
 document.getElementById("h4ntoz").innerHTML="Authors N-Z";
