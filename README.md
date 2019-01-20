@@ -1,4 +1,4 @@
-# FED_BOOKS (updated, v2)
+# FED_BOOKS (updated, v3)
 Extended version of the FED book app with enhanced functionality
 
 1. **Sort functionality**: arrange data by author and title
