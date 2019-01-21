@@ -1,4 +1,4 @@
-# FED_BOOKS (updated, v3)
+# FED_BOOKS (updated, v4)
 Extended version of the FED book app with enhanced functionality
 
 1. **Sort functionality**: arrange data by author and title
@@ -13,3 +13,5 @@ Extended version of the FED book app with enhanced functionality
 6. **Changed landing page to show image before results are displayed**: The site initially displays a default image prior to the user selecting how to sort bok data
 ### (update 3)
 7. **vue component refactor**: added in additional modularity and streamlined index.html by refactoring modal as a vue component
+### (update 4)
+8. **universal modal refactor**: consolidated code into a single, universal modal vue component for additional streamlining by reducing redundancy
