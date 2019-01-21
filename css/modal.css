@@ -29,7 +29,6 @@
 }
 
 
-
 .modal-image {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -57,6 +56,14 @@
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s
+}
+
+.modalPriceActive {
+  display: inline-block;
+}
+
+.modalPriceInActive {
+  display: none;
 }
 
 .modal-content-image {
@@ -144,9 +151,9 @@
   float:left;
 }
 
-#buy-hide {
+/*#buy-hide {
   display:block;
-}
+}*/
 
 #modal-book-price {
   padding-left:1rem;

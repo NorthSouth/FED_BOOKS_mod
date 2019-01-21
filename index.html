@@ -89,8 +89,6 @@
                           <div class="infoBTN-wrapper">
                             <button type="button" class="btn btn-info btn-block" v-on:click.prevent="showModal(book,index)"  id="myBtn">more info</button>
                           </div>
-                          <!-- Info Modal -->
-                        <modal-overlay-atom></modal-overlay-atom> 
                       </div>
                       </div>
                     </div>
@@ -118,10 +116,8 @@
                         </div>
                         <!-- Open The Modal -->
                         <div class="infoBTN-wrapper">
-                          <button type="button" class="btn btn-info btn-block" v-on:click.prevent="showModal2(book,index)"  id="myBtn">more info</button>
+                          <button type="button" class="btn btn-info btn-block" v-on:click.prevent="showModal(book,index)"  id="myBtn">more info</button>
                         </div>
-                        <!-- Info Modal -->                        
-                        <modal-overlay-ntoz></modal-overlay-ntoz> 
                     </div>
                     </div>
                   </div>
@@ -132,6 +128,8 @@
                       <button type="submit" value="submit" class="m-2 btn btn-primary  mt-2 showLess2Class" style="background-color: gray;border-color:gray;" v-on:click.prevent="showLess2(this)" >SHOW LESS (N -Z)</button>
                   </div>
               </div>
+              <!--       modal window       -->
+                <div id="modal-window" ></div>
             </div>
           </div>
         </div>

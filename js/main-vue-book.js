@@ -1,6 +1,6 @@
 var bk = new Vue({
   el: '#book-index',
-  data: {
+  data: {    
     books: booksAtoM,
     books2: booksNtoZ,
     seenAtoM:buyableArrAtoM,
@@ -9,7 +9,8 @@ var bk = new Vue({
     bookURL:"",
     bookIMG:"",
     bkIndex:0,
-    bkModal:[]
+    bkModal:[],
+    modalInfo:[]
   },
   mounted(){    
     this.fetchData(); // load local JSON file
@@ -28,141 +29,24 @@ var bk = new Vue({
     sendInfo: function (e){
       this.selectedBook = e;
     },
-    modalTitle: function (e) {
-      document.getElementById("modal-title").innerHTML=e;
-    },
-    modalDescription: function (e) {
-      document.getElementById("modal-description").innerHTML=e;
-    },
-    modalAuthor: function (e) {
-      var numAuthors=e.volumeInfo.authors.length
-      var plural="";
-      if (numAuthors > 1) { plural ="s"}
-      document.getElementById("modal-author").innerHTML="<span>Author"+plural+":</span> "+this.authorI(e);
-    },
-    modalTitle2: function (e) {
-      document.getElementById("modal-title2").innerHTML=e;
-    },
-    modalDescription2: function (e) {
-      document.getElementById("modal-description2").innerHTML=e;
-    },
-    modalAuthor2: function (e) {
-      var numAuthors=e.volumeInfo.authors.length
-      var plural="";
-      if (numAuthors > 1) { plural ="s"}
-      document.getElementById("modal-author2").innerHTML="<span>Author"+plural+":</span> "+this.authorI(e);
-    },
     showModal: function (e,i) {
       var modal = document.getElementById('myModal');
       modal.style.display = "block";
-      this.modalisSeenAtoM(e,i);
-      this.bkIndex=i;
-      this.bkModal=e;
-    },
-    showModal2: function (e,i) {
-      var modal = document.getElementById('myModal2');
-      modal.style.display = "block";
-      this.modalisSeenNtoZ(e,i);  
-      this.bkIndex=i;
-      this.bkModal=e;
-    },
-    showImageModal: function (e) {
-      var modal = document.getElementById('myModal-image');
-      var modalImg = document.getElementById('modalImg');
-      modal.style.display = "block";
-      this.modalDescription(e.volumeInfo.description);
-      this.bookURL=this.srcI(e);      
-      modalImg.src=this.bookURL;
-    },
-    dismissModal: function (e) {
-      var modal = document.getElementById('myModal');
-      modal.style.display = "none";
-    },
-    dismissModal2: function (e) {
-      var modal = document.getElementById('myModal2');
-      modal.style.display = "none";
-    },
-    dismissImageModal: function (e) {
-      var modal = document.getElementById('myModal-image');
-      modal.style.display = "none";
-    },
-    dismissImageModal2: function (e) {
-      var modal = document.getElementById('myModal-image');
-      modal.style.display = "none";
-    },
-    buyCartItem: function (e){
-      url=e.saleInfo.buyLink;
-      var win = window.open(url, '_blank');
-      win.focus();
-    },
-    buyModalItem: function(){      
-      url=this.bookURL;
-      var win = window.open(url, '_blank');
-      win.focus();
-    },
-    isSeenAtoM: function (e) {
-      saleAbility=booksAtoM[e].saleInfo.saleability;
-      if (saleAbility == "NOT_FOR_SALE") {
-        this.seenAtoM[e]=!this.seenAtoM[e];
-      }      
-      return this.seenAtoM[e];
-    },
-    isSeenNtoZ: function (e) {
-      saleAbility=booksNtoZ[e].saleInfo.saleability;
-      if (saleAbility == "NOT_FOR_SALE") {
-        this.seenNtoZ[e]=!this.seenNtoZ[e];
-      }      
-      return this.seenNtoZ[e];
-    },
-    modalisSeenAtoM: function (e,i) {
-      saleAbility=e.saleInfo.saleability;
-      if (saleAbility === "NOT_FOR_SALE" ) {
-        this.seenAtoM[i]=!this.seenAtoM[i];
-        element=document.getElementById("buy-hide");
-        element.style.display="none"        
-        element=document.getElementById("modal-book-price");
-      } else {       
-        element=document.getElementById("buy-hide");
-        element.style.display="block"          
-        element=document.getElementById("modal-book-price");
-        this.bookURL=e.saleInfo.buyLink;
-      }     
-      return this.seenAtoM[e];
-    },
-    modalisSeenNtoZ: function (e,i) {
-      saleAbility=e.saleInfo.saleability;
-      if (saleAbility === "NOT_FOR_SALE" ) {
-        this.seenNtoZ[i]=false;
-        element=document.getElementById("buy-hide2");
-        element.style.display="none"        
-        element=document.getElementById("modal-book-price2");
-      } else {      
-        this.seenNtoZ[i]=true; 
-        element=document.getElementById("buy-hide2");
-        element.style.display="block"          
-        element=document.getElementById("modal-book-price2");
-        this.bookURL=e.saleInfo.buyLink;
-      }     
-      return this.seenNtoZ[e];
+      modalWindow.modalInfo = {
+        id: 1,
+        index:i,
+        book: e
+      };
     },
     nameI: function (e) {
       var truncateNameVal=45;
-      var bkTitle="";
-      
+      var bkTitle="";      
       if (e.volumeInfo.title.length > truncateNameVal) {
         bkTitle=e.volumeInfo.title.substring(0,truncateNameVal)+" ...";  
       } else {
         bkTitle=e.volumeInfo.title.substring(0,truncateNameVal);        
       }
       return bkTitle;
-    },
-    priceI: function (e) {
-      var bkPrice=0;
-      if (e.saleInfo.saleability == "NOT_FOR_SALE") {
-        return ("not for sale");
-      } else {
-        return e.saleInfo.listPrice.amount+" ("+e.saleInfo.listPrice.currencyCode+")";
-      };
     },
     url: function (e) {
       return e.volumeInfo.imageLinks.thumbnail;
@@ -172,17 +56,6 @@ var bk = new Vue({
     },
     itemNum: function (e) {
       return ("item-" + e.refNum);
-    },
-    authorI: function (e) {
-      var bkAuthor="";
-      var numAuthors=e.volumeInfo.authors.length
-      
-      if (e.volumeInfo.authors.length > 1) {
-        bkAuthor="Authors: "+e.volumeInfo.authors[0]+" et al";
-      } else {
-        bkAuthor="Author: "+e.volumeInfo.authors[0];
-    }
-      return bkAuthor;
     },
     sortValI: function (e) {
       var sortState=document.getElementById("inputState").value;
@@ -394,39 +267,113 @@ var bk = new Vue({
   }
 })
 
-Vue.component('modal-overlay-atom', {
+var modalWindow = new Vue({
+  el: '#modal-window',
+  data: {
+    books: booksAtoM,
+    books2: booksNtoZ,
+    seenAtoM:buyableArrAtoM,
+    seenNtoZ:buyableArrNtoZ,
+    btnPress: false,
+    bookURL:"",
+    bookIMG:"",
+    bkIndex:0,
+    bkModal:[],
+    modalInfo: {
+        id: -1,
+        index:1,
+        book: bk.books[1]
+    },
+    indexM:0,
+    isActive:false
+  },
   computed: {
+    buyObject: function (){
+      if (this.modalInfo.id > -1){
+        return {
+          modalPriceActive: this.priceITruth(this.modalInfo.book), modalPriceInActive: !this.priceITruth(this.modalInfo.book)
+        }
+      }
+    },
     bookIndex: function () {
-      this.modalIndex=this.$parent.bkIndex;
-      return this.$parent.bkIndex
+      this.modalIndex=bk.bkIndex;
+      console.log(bk.bkIndex,bk.books);
+      if (bk.books.length>0){
+        return bk.bkIndex
+      }
     },
     bookTitle: function () {
-      this.modalIndex=this.$parent.bkIndex;
-      return this.$parent.books[this.modalIndex].volumeInfo.title
+      if (this.modalInfo.id > -1){
+        return this.modalInfo.book.volumeInfo.title
+      }
     },
     bookAuthor: function () {
-      this.modalIndex=this.$parent.bkIndex;
-      return this.$parent.books[this.modalIndex].volumeInfo.authors[0]
+      if (this.modalInfo.id > -1){
+        return this.modalInfo.book.volumeInfo.authors[0]
+      }
     },
     bookDescription: function () {
-      this.modalIndex=this.$parent.bkIndex;
-      return this.$parent.books[this.modalIndex].volumeInfo.description
+      if (this.modalInfo.id > -1){
+        return this.modalInfo.book.volumeInfo.description
+      }
     },
     bookAuthorPlural: function () {
-      this.modalIndex=this.$parent.bkIndex;
-      var numAuthors=this.$parent.books[this.modalIndex].volumeInfo.authors.length;
-      if (numAuthors > 1) { return "s"};
+      if (this.modalInfo.id > -1){
+        var numAuthors=this.modalInfo.book.volumeInfo.authors.length;
+        if (numAuthors > 1) { return "s"};
+      }
     },
-    bookPrice: function () {      
-      this.modalIndex=this.$parent.bkIndex;
-      var modalBkPrice=this.$parent.priceI(this.$parent.books[this.modalIndex]);
-      if (modalBkPrice != "not for sale") {
-        return modalBkPrice;
+    bookPrice: function () {    
+      if (this.modalInfo.id > -1){
+        bookPrice=this.priceI(this.modalInfo.book);
+        if (bookPrice != "not for sale") {
+          return bookPrice;
+        }
       }
     }
   },
+  methods: {
+    bookIndexM: function(){
+      console.log("index:",this.indexM,bk.books);
+      return bk.bkIndex
+    },
+    dismissModal: function (e) {
+      var modal = document.getElementById('myModal');
+      modal.style.display = "none";
+    },
+    dismissImageModal: function (e) {
+      var modal = document.getElementById('myModal-image');
+      modal.style.display = "none";
+    },
+    priceITruth: function (e) {
+      var bkPrice=0;
+      if (e.saleInfo.saleability == "NOT_FOR_SALE") {
+        return false;
+      } else {
+        return true;
+      };
+    },
+    priceI: function (e) {
+      var bkPrice=0;
+      if (e.saleInfo.saleability == "NOT_FOR_SALE") {
+        return ("not for sale");
+      } else {
+        return e.saleInfo.listPrice.amount+" ("+e.saleInfo.listPrice.currencyCode+")";
+      };
+    },
+    infoM: function (){
+      if (this.modalInfo.id > -1 ) {
+        return this.modalInfo.book.volumeInfo.title
+      }      
+    },
+    buyModalItem: function(){      
+      url=this.modalInfo.book.saleInfo.buyLink;
+      var win = window.open(url, '_blank');
+      win.focus();
+    }
+  },
   template: `  
-    <div id="myModal" class="modal">
+    <div id="myModal" class="modal" >
       <!-- Modal content info -->
       <div class="modal-content">
         <div class="modal-header">
@@ -438,64 +385,10 @@ Vue.component('modal-overlay-atom', {
         </div>
         <div class="modal-footer">
           <div class="modal-footer-wrapper">
-            <div id="buy-hide" class="buyMeIcon-wrapper">
-              <i class="fa fa-shopping-cart buyMeIcon" v-on:click.prevent="$parent.buyModalItem"><span id="modal-book-price" >{{ bookPrice }}</span></i>
+            <div id="buy-hide" class="buyMeIcon-wrapper" v-bind:class="buyObject">
+              <i class="fa fa-shopping-cart buyMeIcon" v-on:click.prevent="buyModalItem"><span id="modal-book-price" >{{bookPrice}}</span></i>
             </div>
-            <div id="modal-close" v-on:click.prevent="$parent.dismissModal(this)" class="close">&times;</div>
-          </div>
-        </div>
-      </div>         
-    </div> 
-  `
-})
-Vue.component('modal-overlay-ntoz', {
-  computed: {
-    bookIndex: function () {
-      this.modalIndex=this.$parent.bkIndex;
-      return this.$parent.bkIndex
-    },
-    bookTitle: function () {
-      this.modalIndex=this.$parent.bkIndex;
-      return this.$parent.books2[this.modalIndex].volumeInfo.title
-    },
-    bookAuthor: function () {
-      this.modalIndex=this.$parent.bkIndex;
-      return this.$parent.books2[this.modalIndex].volumeInfo.authors[0]
-    },
-    bookDescription: function () {
-      this.modalIndex=this.$parent.bkIndex;
-      return this.$parent.books2[this.modalIndex].volumeInfo.description
-    },
-    bookAuthorPlural: function () {
-      this.modalIndex=this.$parent.bkIndex;
-      var numAuthors=this.$parent.books2[this.modalIndex].volumeInfo.authors.length;
-      if (numAuthors > 1) { return "s"};
-    },
-    bookPrice: function () {      
-      this.modalIndex=this.$parent.bkIndex;
-      var modalBkPrice=this.$parent.priceI(this.$parent.books2[this.modalIndex]);
-      if (modalBkPrice != "not for sale") {
-        return modalBkPrice;
-      }
-    }
-  },
-  template: `  
-    <div id="myModal2" class="modal">
-      <!-- Modal content info -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 id="modal-title">{{ bookTitle }}</h2>
-        </div>
-        <div class="modal-body">
-          <p id="modal-author"><span>Author{{ bookAuthorPlural }}:</span> {{ bookAuthor }}</p>
-          <p id="modal-description">{{ bookDescription }}</p>
-        </div>
-        <div class="modal-footer">
-          <div class="modal-footer-wrapper">
-            <div id="buy-hide2" class="buyMeIcon-wrapper">
-              <i class="fa fa-shopping-cart buyMeIcon" v-on:click.prevent="$parent.buyModalItem"><span id="modal-book-price2" >{{ bookPrice }}</span></i>
-            </div>
-            <div id="modal-close" v-on:click.prevent="$parent.dismissModal2(this)" class="close">&times;</div>
+            <div id="modal-close" v-on:click.prevent="dismissModal(this)" class="close">&times;</div>
           </div>
         </div>
       </div>         
